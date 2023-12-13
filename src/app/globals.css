@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Ubuntu:ital,wght@1,300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: DotGothic16, sans-serif;
+  }
+}
