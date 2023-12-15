@@ -6,14 +6,13 @@ export default function Home() {
             <header className="h-92 flex justify-between items-center bg-light-pink">
                 <img src="/heart.svg" alt="Heart" style={{ width: "auto", height: "72px" }} className="px-8" />
                 <div className="flex flex-row items-center font-semibold text-4xl text-vivid-pink">
-                    <button className="font-Dot">About</button>
+                    <button className="font-Dot">Profile</button>
                     <button className="px-32 font-Dot">Skill</button>
                 </div>
             </header>
-            <div className="w-full h-720 flex justify-center">
-                <div className="bg-white">
-                    <img src="/name.svg" alt="Name" style={{ width: "1200px", height: "auto" }} />
-                    あとからどうにかしたいスペース
+            <div className="flex justify-center">
+                <div className="w-11/12 h-720 flex justify-center bg-white">
+                    <img src="/name.svg" alt="Name" style={{ width: "w-full", height: "auto" }} />
                 </div>
             </div>
             <div className="flex justify-center">
