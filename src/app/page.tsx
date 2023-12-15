@@ -58,6 +58,18 @@ export default function Home() {
                             </h3>
                         </div>
                     </div>
+
+                    {/* ↓余白を一旦divで作成している */}
+                    <div className="w-full h-36" />
+                    <Title title="language" subTitle="げんごたち" />
+                    <div className="w-full h-1200 flex justify-between">
+                        <div className="w-2/5 h-320 my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl shadow-pink">
+                            <div className="w-full h-40 bg-light-purple" />
+                        </div>
+                        <div className="w-2/5 h-320 my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl shadow-pink">
+                            <div className="w-full h-40 bg-light-purple" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

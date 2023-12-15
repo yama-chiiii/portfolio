@@ -26,6 +26,8 @@ const config: Config = {
                 "light-blue": "#C7F4F6",
                 "light-yellow": "#FDFFB0",
                 "light-green": "#C7F6CF",
+                "light-purple": "#E5C7F6",
+                "normal-purple": "#B873FE",
             },
             boxShadow: {
                 pink: "28px 28px 1px 2px rgba(255, 69, 253, .9)",
