@@ -90,19 +90,25 @@ export default function Home() {
                     {/* げんご */}
                     <div className="w-full h-36" />
                     <Title title="language" subTitle="げんごたち" />
-                    <div className="w-full h-720 my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl shadow-pink">
+                    <div className="w-full h-900 my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl shadow-pink">
                         <div className="w-full h-40 bg-light-purple" />
-                        <div className="w-4/5 h-300 mt-20 flex justify-between ">
-                            <Language language="HTML" heart="♥♥♥"></Language>
-                            <Language language="CSS" heart="♥♥♥"></Language>
-                        </div>
-                        <div className="w-4/5 h-300 mt-20 flex justify-between ">
-                            <Language language="TypeScript" heart="♥♥♥"></Language>
-                            <Language language="JavaScript" heart="♥♥♡"></Language>
-                        </div>
-                        <div className="w-4/5 h-300 mt-20 flex justify-between ">
-                            <Language language="C" heart="♥♥♡"></Language>
-                            <Language language="C++" heart="♥♡♡"></Language>
+                        {/* <div className="w-4/5 h-300 flex flex-col items-center pt-36 w-2/5 rounded-3xl border-t-2 border-r-2 border-l-2 border-b-8 border-purple-pink text-4xl text-red-pink">
+                            <div>HTML</div>
+                            <div className="mt-20 text-red-600">♥♥♥</div>
+                        </div> */}
+                        <div className="w-4/5 min-h-screen">
+                            <div className="w-full h-300 mt-20 flex justify-between ">
+                                <Language language="HTML" heart="♥♥♥"></Language>
+                                <Language language="CSS" heart="♥♥♥"></Language>
+                            </div>
+                            <div className="w-full h-300 mt-20 flex justify-between ">
+                                <Language language="TypeScript" heart="♥♥♥"></Language>
+                                <Language language="JavaScript" heart="♥♥♡"></Language>
+                            </div>
+                            <div className="w-full h-300 mt-20 flex justify-between ">
+                                <Language language="C" heart="♥♥♡"></Language>
+                                <Language language="C++" heart="♥♡♡"></Language>
+                            </div>
                         </div>
                     </div>
                 </div>
