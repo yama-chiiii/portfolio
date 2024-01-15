@@ -42,13 +42,8 @@ export default function Home() {
                     <div className="mt-8 text-2xl font-Dot font-semibold text-red-pink">これまでのこと</div> */}
                     <div className="w-full h-720 z-20 my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl shadow-pink">
                         <div className="w-full h-40 bg-light-yellow" />
-                        <div className="w-full flex flex-row">
-                            <div className="w-1/5">
-                                {/* <div
-                                    className="absolute left-1/2 top-0 bg-light-yellow w-1 h-full transform -translate-x-1/2 vertical-line"
-                                    style={{ height: `${scrollY}px` }}
-                                ></div> */}
-                            </div>
+                        <div className="w-full flex flex-row overflow-y-auto">
+                            <div className="w-1/5 flex border-r-4 border-light-yellow">{/* ここにスクロールバーを作成 */}</div>
                             <div className="mx-4 my-16">
                                 <h2 className="w-80 my-16 text-vivid-pink border-b-4 border-light-yellow">2021年</h2>
                                 <p className="mb-12">４月 　北九州高専 入学 </p>
@@ -98,16 +93,16 @@ export default function Home() {
                         </div> */}
                         <div className="w-4/5 min-h-screen">
                             <div className="w-full h-300 mt-20 flex justify-between ">
-                                <Language language="HTML" heart="♥♥♥"></Language>
-                                <Language language="CSS" heart="♥♥♥"></Language>
+                                <Language language="HTML" overview="言語の説明" heart="♥♥♥"></Language>
+                                <Language language="CSS" overview="言語の説明" heart="♥♥♥"></Language>
                             </div>
                             <div className="w-full h-300 mt-20 flex justify-between ">
-                                <Language language="TypeScript" heart="♥♥♥"></Language>
-                                <Language language="JavaScript" heart="♥♥♡"></Language>
+                                <Language language="TypeScript" overview="言語の説明" heart="♥♥♥"></Language>
+                                <Language language="JavaScript" overview="言語の説明" heart="♥♥♡"></Language>
                             </div>
                             <div className="w-full h-300 mt-20 flex justify-between ">
-                                <Language language="C" heart="♥♥♡"></Language>
-                                <Language language="C++" heart="♥♡♡"></Language>
+                                <Language language="C" overview="言語の説明" heart="♥♥♡"></Language>
+                                <Language language="C++" overview="言語の説明" heart="♥♡♡"></Language>
                             </div>
                         </div>
                     </div>
