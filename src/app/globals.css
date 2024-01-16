@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-line {
+  @apply w-4 h-89 ml-40 bg-pink-500 ; /* Tailwind CSSのクラスを適用する */
+}
+
+.dot {
+  @apply w-10 h-10 bg-pink-500 rounded-full pr-4;  /* 丸を描画するクラス */
+}
+
+
 @layer base {
   html {
     font-family: DotGothic16, sans-serif;

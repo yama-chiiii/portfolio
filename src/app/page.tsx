@@ -43,7 +43,11 @@ export default function Home() {
                     <div className="w-full h-720 z-20 my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl shadow-pink">
                         <div className="w-full h-40 bg-light-yellow" />
                         <div className="w-full flex flex-row overflow-y-auto">
-                            <div className="w-1/5 flex border-r-4 border-light-yellow">{/* ここにスクロールバーを作成 */}</div>
+                            <div className="w-1/5 flex mt-62">
+                                <div className="custom-line">
+                                    <div className="dot"></div>
+                                </div>
+                            </div>
                             <div className="mx-4 my-16">
                                 <h2 className="w-80 my-16 text-vivid-pink border-b-4 border-light-yellow">2021年</h2>
                                 <p className="mb-12">４月 　北九州高専 入学 </p>
