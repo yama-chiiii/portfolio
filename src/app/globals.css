@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 .custom-line {
-  @apply w-4 h-89 ml-40 bg-pink-500 ; /* Tailwind CSSのクラスを適用する */
+  @apply w-2 h-120 ml-4 bg-vivid-pink ; /* Tailwind CSSのクラスを適用する */
 }
 
 .dot {
-  @apply w-10 h-10 bg-pink-500 rounded-full pr-4;  /* 丸を描画するクラス */
+  @apply w-12 h-12 bg-vivid-pink rounded-full pr-4;  /* 丸を描画するクラス */
 }
 
 
