@@ -19,7 +19,9 @@ export default function Home() {
             <div className="flex justify-center">
                 <div className="w-2/3 min-h-screen flex flex-col items-center bg-light-pink">
                     <Title title="profile" subTitle="じぶんについて" />
-                    <Profile />
+                    <div className="w-full h-520 flex flex-col my-20 bg-white font-Dot font-extrabold text-2xl shadow-pink">
+                        <Profile />
+                    </div>
                     <Title title="history" subTitle="これまでのこと" />
                     <History />
                     <Title title="skill" subTitle="べんきょうちゅう" />
