@@ -1,10 +1,10 @@
 "use client";
-import { AllLanguage } from "@/component/allLanguage";
-import { Header } from "@/component/header";
-import { History } from "@/component/history";
-import { Profile } from "@/component/profile";
-import { Skill } from "@/component/skill";
-import { Title } from "@/component/title";
+import { AllLanguage } from "@/app/component/allLanguage";
+import { Header } from "@/app/component/header";
+import { History } from "@/app/component/history";
+import { Profile } from "@/app/component/profile";
+import { Skill } from "@/app/component/skill";
+import { Title } from "@/app/component/title";
 
 export default function Home() {
     return (
