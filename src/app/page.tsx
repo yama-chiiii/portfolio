@@ -8,18 +8,44 @@ import { Title } from "@/app/component/title";
 import { useRef } from "react";
 
 export default function Home() {
+    const profileRef = useRef<HTMLDivElement | null>(null);
     const historyRef = useRef<HTMLDivElement | null>(null);
+    const skillRef = useRef<HTMLDivElement | null>(null);
+    const languageRef = useRef<HTMLDivElement | null>(null);
 
     // historyボタンが押されたときの処理
+    const handleProfileButtonClick = () => {
+        if (profileRef.current) {
+            profileRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     const handleHistoryButtonClick = () => {
         if (historyRef.current) {
             historyRef.current.scrollIntoView({ behavior: "smooth" });
         }
     };
 
+    const handleSkillButtonClick = () => {
+        if (skillRef.current) {
+            skillRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const handleLanguageButtonClick = () => {
+        if (languageRef.current) {
+            languageRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div className="w-full min-h-screen bg-light-pink">
-            <Header onHistoryButtonClick={handleHistoryButtonClick} />
+            <Header
+                onProfileButtonClick={handleProfileButtonClick}
+                onHistoryButtonClick={handleHistoryButtonClick}
+                onSkillButtonClick={handleSkillButtonClick}
+                onLanguageButtonClick={handleLanguageButtonClick}
+            />
             <div className="flex justify-center mb-12">
                 <div className="w-11/12 h-720 flex justify-center bg-white">
                     <img src="/name.svg" alt="Name" style={{ width: "w-full", height: "auto" }} />
@@ -28,19 +54,24 @@ export default function Home() {
 
             <div className="flex justify-center">
                 <div className="w-2/3 min-h-screen flex flex-col items-center bg-light-pink">
-                    <Title title="profile" subTitle="じぶんについて" />
-                    <div className="w-full h-520 flex flex-col my-20 bg-white font-Dot font-extrabold text-2xl shadow-pink">
-                        <Profile />
+                    <div ref={profileRef}>
+                        <Title title="profile" subTitle="じぶんについて" />
+                        <div className="w-full h-520 flex flex-col my-20 bg-white font-Dot font-extrabold text-2xl shadow-pink">
+                            <Profile />
+                        </div>
                     </div>
                     <div ref={historyRef}>
                         <Title title="history" subTitle="これまでのこと" />
                         <History />
                     </div>
-                    <History />
-                    <Title title="skill" subTitle="べんきょうちゅう" />
-                    <Skill />
-                    <Title title="language" subTitle="げんごたち" />
-                    <AllLanguage />
+                    <div ref={skillRef}>
+                        <Title title="skill" subTitle="べんきょうちゅう" />
+                        <Skill />
+                    </div>
+                    <div ref={languageRef}>
+                        <Title title="language" subTitle="げんごたち" />
+                        <AllLanguage />
+                    </div>
                 </div>
             </div>
         </div>

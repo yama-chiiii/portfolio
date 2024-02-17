@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 
-type OnHistoryButtonClick = () => void;
+type OnButtonClick = () => void;
 
 type Props = {
-    onHistoryButtonClick: OnHistoryButtonClick;
+    onProfileButtonClick: OnButtonClick;
+    onHistoryButtonClick: OnButtonClick;
+    onSkillButtonClick: OnButtonClick;
+    onLanguageButtonClick: OnButtonClick;
 };
 
-export const Header = ({ onHistoryButtonClick }: Props) => {
+export const Header = ({ onProfileButtonClick, onHistoryButtonClick, onSkillButtonClick, onLanguageButtonClick }: Props) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -38,11 +41,18 @@ export const Header = ({ onHistoryButtonClick }: Props) => {
                     </button>
                     {menuOpen && (
                         <div className="absolute top-0 right-0 mt-16 mr-8 flex flex-col bg-white border border-gray-300 rounded-md shadow-md">
+                            <button className="px-32 font-Dot" onClick={onProfileButtonClick}>
+                                profile
+                            </button>
                             <button className="px-32 font-Dot" onClick={onHistoryButtonClick}>
                                 history
                             </button>
-                            <button className="px-32 font-Dot">skill</button>
-                            <button className="px-32 font-Dot">language</button>
+                            <button className="px-32 font-Dot" onClick={onSkillButtonClick}>
+                                skill
+                            </button>
+                            <button className="px-32 font-Dot" onClick={onLanguageButtonClick}>
+                                language
+                            </button>
                         </div>
                     )}
                 </div>
