@@ -54,21 +54,19 @@ export default function Home() {
 
             <div className="flex justify-center">
                 <div className="w-2/3 min-h-screen flex flex-col items-center bg-light-pink">
-                    <div ref={profileRef}>
+                    <div ref={profileRef} className="w-full">
                         <Title title="profile" subTitle="じぶんについて" />
-                        <div className="w-full h-520 flex flex-col my-20 bg-white font-Dot font-extrabold text-2xl shadow-pink">
-                            <Profile />
-                        </div>
+                        <Profile />
                     </div>
-                    <div ref={historyRef}>
+                    <div ref={historyRef} className="w-full">
                         <Title title="history" subTitle="これまでのこと" />
                         <History />
                     </div>
-                    <div ref={skillRef}>
+                    <div ref={skillRef} className="w-full">
                         <Title title="skill" subTitle="べんきょうちゅう" />
                         <Skill />
                     </div>
-                    <div ref={languageRef}>
+                    <div ref={languageRef} className="w-full">
                         <Title title="language" subTitle="げんごたち" />
                         <AllLanguage />
                     </div>
