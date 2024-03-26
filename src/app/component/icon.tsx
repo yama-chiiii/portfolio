@@ -24,7 +24,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./icon.css";
 
-export const Icon = () => {
+export default function Icon() {
     return (
         <div className="">
             <FontAwesomeIcon icon={faHeart} className="icon" />
