@@ -6,6 +6,7 @@ import { Profile } from "@/app/component/profile";
 import { Skill } from "@/app/component/skill";
 import { Title } from "@/app/component/title";
 import { useRef } from "react";
+
 // import { Icon } from "./component/icon";
 
 export default function Home() {
@@ -57,7 +58,7 @@ export default function Home() {
                     onLanguageButtonClick={handleLanguageButtonClick}
                 />
                 {/* <div className="flex justify-center mb-12 z-10">
-                        <img src="/name.svg" alt="Name" style={{ width: "w-full", height: "auto" }} />
+                        <Image src="/name.svg" alt="Name" style={{ width: "w-full", height: "auto" }} />
                     </div> */}
                 <div className="flex justify-center z-10 min-w-50%">
                     <div className="w-2/3 h-auto min-w-50% flex flex-col items-center bg-light-pink">
