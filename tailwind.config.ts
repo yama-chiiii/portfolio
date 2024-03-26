@@ -40,6 +40,9 @@ const config: Config = {
             boxShadow: {
                 pink: "28px 28px 1px 2px rgba(255, 69, 253, .9)",
             },
+            minWidth: {
+                "50%": "50vw", // ここにカスタム値を追加
+            },
         },
         fontFamily: {
             Dot: ["DotGothic16", "sans-serif"],

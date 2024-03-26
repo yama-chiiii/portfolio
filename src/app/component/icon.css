@@ -1,0 +1,36 @@
+.main{
+    animation: animate 60s linear infinite;
+}
+
+@keyframes animate{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.icon {
+    color: rgba(255, 232, 253,0.5);
+    /* color: #ffffff; */
+    margin-left: 4px;
+    margin-right: 4px;
+    transition: 1s;
+}
+
+.icon:hover {
+    color: #ffffff;
+    text-shadow: 0 0 120px violet;
+    transition: 0s;
+}
+
+.icon-container {
+    position: absolute; /* 背景に表示するために必要 */
+    z-index: 1; /* 他のコンテンツより背景に表示 */
+    width: 100%; /* 必要に応じて調整 */
+    height: 100%; /* 必要に応じて調整 */
+    top: 0;
+    left: 0;
+}
+

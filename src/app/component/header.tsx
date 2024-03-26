@@ -32,31 +32,27 @@ export const Header = ({ onProfileButtonClick, onHistoryButtonClick, onSkillButt
     };
 
     return (
-        <div>
-            <header className="h-92 flex justify-between items-center bg-light-pink">
-                <img src="/heart.svg" alt="Heart" style={{ width: "auto", height: "72px" }} className="px-8" />
-                <div className="flex flex-row items-center font-semibold text-4xl text-vivid-pink">
-                    <button className="font-Dot" onClick={Menu}>
-                        ☰
+        <div className="z-10 relative">
+            <img src="/name.svg" alt="Name" className="w-full h-auto" />
+            <button className="absolute top-0 right-0 m-4 p-2" style={{ fontFamily: "Dot", fontSize: "16px" }} onClick={Menu}>
+                ☰
+            </button>
+            {menuOpen && (
+                <div className="absolute top-0 right-0 mt-4 flex flex-col bg-white border border-gray-300 rounded-md shadow-md">
+                    <button className="px-32 font-Dot" onClick={onProfileButtonClick}>
+                        profile
                     </button>
-                    {menuOpen && (
-                        <div className="absolute top-0 right-0 mt-16 mr-8 flex flex-col bg-white border border-gray-300 rounded-md shadow-md">
-                            <button className="px-32 font-Dot" onClick={onProfileButtonClick}>
-                                profile
-                            </button>
-                            <button className="px-32 font-Dot" onClick={onHistoryButtonClick}>
-                                history
-                            </button>
-                            <button className="px-32 font-Dot" onClick={onSkillButtonClick}>
-                                skill
-                            </button>
-                            <button className="px-32 font-Dot" onClick={onLanguageButtonClick}>
-                                language
-                            </button>
-                        </div>
-                    )}
+                    <button className="px-32 font-Dot" onClick={onHistoryButtonClick}>
+                        history
+                    </button>
+                    <button className="px-32 font-Dot" onClick={onSkillButtonClick}>
+                        skill
+                    </button>
+                    <button className="px-32 font-Dot" onClick={onLanguageButtonClick}>
+                        language
+                    </button>
                 </div>
-            </header>
+            )}
         </div>
     );
 };
