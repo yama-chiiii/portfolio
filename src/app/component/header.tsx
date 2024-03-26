@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 type OnButtonClick = () => void;
@@ -33,7 +34,7 @@ export const Header = ({ onProfileButtonClick, onHistoryButtonClick, onSkillButt
 
     return (
         <div className="z-10 relative">
-            <img src="/name.svg" alt="Name" className="w-full h-auto" />
+            <Image src="/name.svg" alt="Name" className="w-full h-auto" />
             <button className="absolute top-0 right-0 m-4 p-2" style={{ fontFamily: "Dot", fontSize: "16px" }} onClick={Menu}>
                 ☰
             </button>

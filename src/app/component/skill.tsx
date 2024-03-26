@@ -10,7 +10,7 @@ export const Skill = () => {
                 <h3 className="px-20">HTML,CSSを使って、デザインを忠実に再現できるようになれるよう日々勉強中です！</h3>
             </div>
             <div className="flex flex-col items-center">
-                <img src="/pallet.svg" alt="PC" style={{ width: "auto", height: "200px" }} className="px-8 pt-16 mt-12" />
+                <Image src="/pallet.svg" alt="PC" style={{ width: "auto", height: "200px" }} className="px-8 pt-16 mt-12" />
                 <h2 className="text-red-pink">webデザイン</h2>
                 <h3 className="px-20">
                     どんな人が、何に興味を持っていて、何を知りたいかを考えつつ、見てて楽しいwebサイトを作ることを目標としています！
