@@ -25,7 +25,7 @@ export const Language: React.FC<Language> = ({ language, overview, heart }) => {
                 </>
             ); // JavaScriptの間に改行を挿入
         } else {
-            return name; // それ以外の言語名はそのまま返す
+            return name;
         }
     };
 
