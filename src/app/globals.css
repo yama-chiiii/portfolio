@@ -69,7 +69,7 @@
   }
 
   .sub {
-    width: 70%;
+    width: 80%;
     min-width: auto; /* スマホでは最小幅の制限を解除 */
     align-items: stretch; /* 子要素の幅をコンテナに合わせて伸ばす */
   }

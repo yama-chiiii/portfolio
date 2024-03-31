@@ -16,16 +16,37 @@ export const History = () => {
                 </div>
                 <div className="w-4/5 mr-4 my-16">
                     <h2 className="w-80 my-16 text-vivid-pink border-b-4 border-light-yellow">2021年</h2>
-                    <p className="mb-12">４月 　北九州高専 入学 </p>
-                    <p className="mb-12">６月 　コンピューター研究部 入部 </p>
+                    <div className="event-entry mb-12">
+                        <span className="month">４月</span>
+                        <span className="event-details">北九州高専 入学</span>
+                    </div>
+                    <div className="event-entry mb-12">
+                        <span className="month">６月</span>
+                        <span className="event-details">コンピューター研究部 入部</span>
+                    </div>
                     <h2 className="w-80 my-16 text-vivid-pink border-b-4 border-light-yellow">2022年</h2>
-                    <p className="mb-12">９月 　ハックツハッカソン ～プテラカップ～ 参加 </p>
+                    <div className="event-entry mb-12">
+                        <span className="month">９月</span>
+                        <span className="event-details">ハックツハッカソン ～プテラカップ～ 参加</span>
+                    </div>
                     <h2 className="w-80 my-16 text-vivid-pink border-b-4 border-light-yellow">2023年</h2>
-                    <p className="mb-12">２月 　PenguinHack 企業賞 受賞 </p>
-                    <p className="mb-12">４月 　ハックツハッカソン ～ジンベエカップ～ 参加</p>
-                    <p className="mb-12">９月 　アークエルテクノロジーズ株式会社 就業型インターン 参加</p>
+                    <div className="event-entry mb-12">
+                        <span className="month">２月</span>
+                        <span className="event-details">PenguinHack 企業賞 受賞</span>
+                    </div>
+                    <div className="event-entry mb-12">
+                        <span className="month">４月</span>
+                        <span className="event-details">ハックツハッカソン ～ジンベエカップ～ 参加</span>
+                    </div>
+                    <div className="event-entry mb-12">
+                        <span className="month">９月</span>
+                        <span className="event-details">アークエルテクノロジーズ株式会社 就業型インターン 参加</span>
+                    </div>
                     <h2 className="w-80 my-16 text-vivid-pink border-b-4 border-light-yellow">2024年</h2>
-                    <p className="mb-12">２月 　OLIENT TECH 就業型インターン 参加</p>
+                    <div className="event-entry mb-12">
+                        <span className="month">２月</span>
+                        <span className="event-details">OLIENT TECH 就業型インターン 参加</span>
+                    </div>
                 </div>
             </div>
         </div>

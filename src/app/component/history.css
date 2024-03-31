@@ -23,3 +23,19 @@
       height: 140px; /* スマホサイズでの高さを110pxに（h-110相当） */
     }
   }
+
+
+.event-entry {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* 中央揃えにする場合 */
+}
+
+.month {
+    margin-right: 8px; /* 月とイベント詳細の間隔を調整 */
+    white-space: nowrap; /* 月が折り返されないようにする */
+}
+
+.event-details {
+    flex: 1; /* イベント詳細が残りのスペースを全て使うようにする */
+}
