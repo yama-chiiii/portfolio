@@ -1,7 +1,7 @@
 .hum{
     position: absolute;
     top: 2px;
-    right: 2px;
+    right: 4px;
     margin: 4px;
     padding: 2px;
     font-family: DotGothic16, sans-serif;
@@ -43,9 +43,11 @@
     height: auto;
     position: absolute;
     top: 2rem;
-    right: 0;
+    right: 2rem;
     font-family: DotGothic16, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
     color: #FF66B4;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -54,7 +56,14 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     visibility: hidden; /* 初期状態で非表示 */
+}
+
+@media (max-width: 768px) { /* スマホ向けのスタイル */
+    .content {
+        width: 30%; /* スマホでの幅を30%に設定 */
+    }
 }
 
 .content.show {
