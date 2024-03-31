@@ -41,7 +41,7 @@ export default function Home() {
     };
 
     return (
-        <div className="max-w-full h-auto min-w-50% bg-light-pink">
+        <div className="max-w-full h-auto min-w-0 bg-light-pink">
             <div className="relative z-10">
                 {/* <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet" /> */}
                 {/* <section className="h-screen w-full bg-light-pink select-none overflow-x-hidden"> */}

@@ -20,3 +20,12 @@
   }
 }
 
+/* スタイル定義の一部としてCSSを追加 */
+@media (max-width: 768px) { /* 768pxをスマホとして扱う一般的なブレークポイント */
+  .flex-center {
+      flex-direction: column; /* スマホでは縦並びに変更 */
+  }
+
+
+}
+

@@ -34,7 +34,15 @@ export const Header = ({ onProfileButtonClick, onHistoryButtonClick, onSkillButt
 
     return (
         <div className="z-10 relative">
-            <Image src="/name.svg" alt="Name" className="w-full h-auto" />
+            <Image
+                src="/name.svg"
+                alt="Name"
+                style={{ width: "auto", height: "160px" }}
+                width={100} // 適切な幅を指定
+                height={100}
+                layout="responsive"
+                className="w-full h-auto"
+            />
             <button className="absolute top-0 right-0 m-4 p-2" style={{ fontFamily: "Dot", fontSize: "16px" }} onClick={Menu}>
                 ☰
             </button>
