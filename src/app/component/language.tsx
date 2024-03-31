@@ -1,5 +1,3 @@
-import "./language.css";
-
 type Language = {
     language: string;
     overview: string;
@@ -15,7 +13,7 @@ export const Language: React.FC<Language> = ({ language, overview, heart }) => {
                     <br />
                     Script
                 </>
-            ); // TypeScriptの間に改行を挿入
+            );
         } else if (name === "JavaScript") {
             return (
                 <>
@@ -23,7 +21,7 @@ export const Language: React.FC<Language> = ({ language, overview, heart }) => {
                     <br />
                     Script
                 </>
-            ); // JavaScriptの間に改行を挿入
+            );
         } else {
             return name;
         }
