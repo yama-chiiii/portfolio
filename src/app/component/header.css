@@ -1,0 +1,83 @@
+.hum{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    margin: 4px;
+    padding: 2px;
+    font-family: DotGothic16, sans-serif;
+    font-weight: 800;
+    font-size: 2.25rem;
+    color:#FF45FD;
+    transition: transform 0.25s ease-in-out;
+}
+
+.hum.open {
+    transform: rotate(90deg); /* メニューが開いた時のクロスマークへの変化 */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* スライドアウトアニメーション */
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.content {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    font-family: DotGothic16, sans-serif;
+    font-weight: 700;
+    color: #FF66B4;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden; /* 初期状態で非表示 */
+}
+
+.content.show {
+    visibility: visible; /* 表示時に可視 */
+    animation: slideIn 0.3s forwards; /* スライドインアニメーションを適用 */
+}
+
+.content.hide {
+    animation: slideOut 0.3s forwards; /* スライドアウトアニメーションを適用 */
+}
+
+.content button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0; /* ボタン間の余白 */
+    font-family: DotGothic16, sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s; /* ホバー時の背景色変化のアニメーション */
+}
+
+.content button:hover {
+    background-color: #FFE8FD;
+    transition: background-color 0.3s ease-in-out; /* ホバー時の背景色変化 */
+}

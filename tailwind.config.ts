@@ -39,6 +39,7 @@ const config: Config = {
             },
             boxShadow: {
                 pink: "28px 28px 1px 2px rgba(255, 69, 253, .9)",
+                smallPink: "14px 14px 1px 1px rgba(255, 69, 253, .5)",
             },
             minWidth: {
                 "50%": "50vw", // ここにカスタム値を追加

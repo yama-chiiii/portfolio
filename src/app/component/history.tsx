@@ -1,6 +1,6 @@
 export const History = () => {
     return (
-        <div className="w-full h-auto z-20 my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl shadow-pink">
+        <div className="w-full h-auto z-20 my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl">
             <div className="w-full h-40 bg-light-yellow" />
             <div className="w-full flex flex-row overflow-y-auto">
                 <div className="w-56 flex flex-col mt-62 ml-32">
@@ -9,7 +9,6 @@ export const History = () => {
                     <div className="dot" />
                     <div className="custom-line" />
                     <div className="dot" />
-                    <div className="custom-line" />
                     <div className="custom-line" />
                     <div className="dot" />
                 </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Skill = () => {
     return (
-        <div className="w-full h-auto my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl shadow-pink">
+        <div className="w-full h-auto my-20 flex flex-col items-center bg-white font-Dot font-extrabold text-2xl">
             <div className="w-full h-40 bg-light-green" />
             <div className="flex flex-col items-center">
                 <Image

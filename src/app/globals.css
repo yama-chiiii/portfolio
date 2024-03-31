@@ -20,12 +20,50 @@
   }
 }
 
-/* スタイル定義の一部としてCSSを追加 */
-@media (max-width: 768px) { /* 768pxをスマホとして扱う一般的なブレークポイント */
-  .flex-center {
-      flex-direction: column; /* スマホでは縦並びに変更 */
-  }
+.main{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
 
+.sub{
+  width: 66.66%;
+  min-width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
+
+.element{
+  box-shadow: 24px 24px 1px 2px rgba(255, 69, 253, .8);
+}
+
+@media (max-width: 768px) { /* 768pxをスマホとして扱う一般的なブレークポイント */
+  .main {
+    /* 必要に応じて、スマホ向けのスタイリングを追加 */
+    display: flex;
+    flex-direction: column; /* コンテンツを縦並びに変更 */
+    align-items: center; /* 中央寄せ */
+  }
+
+  .sub {
+    width: 70%;
+    min-width: auto; /* スマホでは最小幅の制限を解除 */
+    align-items: stretch; /* 子要素の幅をコンテナに合わせて伸ばす */
+  }
+
+  html {
+    font-size: 10px; /* スマホ表示時の全体のフォントサイズを小さく設定 */
+  }
+
+  .element{
+    box-shadow: 14px 14px 1px 1px rgba(255, 69, 253, .8);
+  }
+
+  /* スマホサイズに適応した他のスタイル変更が必要な場合は、ここに追加 */
+}
+
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import "./header.css";
 
 type OnButtonClick = () => void;
 
@@ -32,22 +33,48 @@ export const Header = ({ onProfileButtonClick, onHistoryButtonClick, onSkillButt
         setMenuOpen(!menuOpen);
     };
 
+    const [contentClass, setContentClass] = useState("");
+
+    useEffect(() => {
+        if (menuOpen) {
+            setContentClass("show");
+        } else if (!menuOpen && contentClass === "show") {
+            setContentClass("hide");
+        }
+    }, [menuOpen, contentClass]);
+
+    const onAnimationEnd = () => {
+        if (contentClass === "hide") {
+            setContentClass("");
+        }
+    };
+
     return (
         <div className="z-10 relative">
             <Image
                 src="/name.svg"
                 alt="Name"
                 style={{ width: "auto", height: "160px" }}
-                width={100} // 適切な幅を指定
+                width={100}
                 height={100}
                 layout="responsive"
                 className="w-full h-auto"
             />
-            <button className="absolute top-0 right-0 m-4 p-2" style={{ fontFamily: "Dot", fontSize: "16px" }} onClick={Menu}>
-                ☰
+            <button className={`hum ${menuOpen ? "open" : ""}`} onClick={Menu}>
+                {menuOpen ? "✖" : "☰"}
             </button>
             {menuOpen && (
-                <div className="absolute top-0 right-0 mt-4 flex flex-col bg-white border border-gray-300 rounded-md shadow-md">
+                <div className={`content ${contentClass}`} onAnimationEnd={onAnimationEnd}>
+                    <div className="flex justify-center">
+                        <Image
+                            src="/heart.svg"
+                            alt="heart"
+                            style={{ width: "80px", height: "auto" }}
+                            width={150} // 適切な幅を指定
+                            height={50}
+                            className="my-4"
+                        />
+                    </div>
                     <button className="px-32 font-Dot" onClick={onProfileButtonClick}>
                         profile
                     </button>
