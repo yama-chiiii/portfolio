@@ -5,7 +5,13 @@ const path = require("path");
 const range = require("lodash/range");
 
 const config: Config = {
-    content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
+    content: [
+        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+        // // "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+        // "./src/app/*.{js,ts,jsx,tsx,mdx}",
+        // "./src/app/components/*.{js,ts,jsx,tsx,mdx}",
+    ],
     theme: {
         extend: {
             backgroundImage: {
@@ -29,9 +35,14 @@ const config: Config = {
                 "light-purple": "#E5C7F6",
                 "normal-purple": "#B873FE",
                 "purple-pink": "#CF5CE2",
+                "vivid-blue": "#3BEDED",
             },
             boxShadow: {
                 pink: "28px 28px 1px 2px rgba(255, 69, 253, .9)",
+                smallPink: "14px 14px 1px 1px rgba(255, 69, 253, .5)",
+            },
+            minWidth: {
+                "50%": "50vw", // ここにカスタム値を追加
             },
         },
         fontFamily: {
