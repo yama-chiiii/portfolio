@@ -4,13 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-line {
-  @apply w-2 h-120 ml-4 bg-vivid-pink ; /* Tailwind CSSのクラスを適用する */
-}
 
-.dot {
-  @apply w-12 h-12 bg-vivid-pink rounded-full pr-4;  /* 丸を描画するクラス */
-}
 
 .loader-container {
   display: flex;

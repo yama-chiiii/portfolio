@@ -1,0 +1,25 @@
+.custom-line {
+  @apply w-2 h-130 ml-4 bg-vivid-pink ; /* Tailwind CSSのクラスを適用する */
+}
+
+.dot {
+  @apply w-12 h-12 bg-vivid-pink rounded-full pr-4;  /* 丸を描画するクラス */
+}
+
+.line {
+    width: 10%; /* 100% / 6 */
+    display: flex;
+    flex-direction: column;
+    margin-top: 62px;
+    margin-left: 32px;
+}
+
+@media (max-width: 768px) {
+    .line {
+      width: 10%; /* スマホサイズでの幅を10%に */
+    }
+
+    .custom-line {
+      height: 110px; /* スマホサイズでの高さを110pxに（h-110相当） */
+    }
+  }
